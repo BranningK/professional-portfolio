@@ -42,6 +42,8 @@ nav.navbar{
   top: 0;
   z-index: 9999;
   transition: 0.32 ease-in-out;
+  background-color: #f2f2f2;
+  box-shadow: 1px 1px 5px 1px #282c34;
 }
 nav.navbar.scroll{
   padding: 0;
