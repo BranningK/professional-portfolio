@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import randomPic from '../assets/randomPic.jpg'
+import randomPic from '../assets/Subject.png'
 
 export const Banner = () => {
   const [ loopNumber, setLoopNumber ] = useState(0);
