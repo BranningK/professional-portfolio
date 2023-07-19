@@ -132,7 +132,6 @@ nav.navbar .navbar-toggler-icon:before{
 .banner{
   margin-top: 0;
   padding: 200px 0 100px 0;
-  background-image: url();
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -278,16 +277,20 @@ nav.navbar .navbar-toggler-icon:before{
 
 /* Carousel */
 .carousel{
-  overflow: hidden;
+  margin-top: 500px;
+  margin-bottom: 500px;
   width: 700px;
-  display: flex;
+  display: relative;
   flex-direction: column;
   justify-content: center;
+  color: black;
+  z-index: 999;
 }
 
 .inner{
-  white-space: nowrap;
-  transform: transform 0.3s;
+  /* white-space: nowrap; */
+  /* transform: transform 0.3s; */
+  display: contents;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); 
 }
 
