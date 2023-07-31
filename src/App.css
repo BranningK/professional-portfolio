@@ -277,19 +277,18 @@ nav.navbar .navbar-toggler-icon:before{
 
 /* Carousel */
 .carousel{
-  margin-top: 500px;
-  margin-bottom: 500px;
   width: 700px;
   display: relative;
   flex-direction: column;
   justify-content: center;
   color: black;
   z-index: 999;
+  bottom: 300px;
 }
 
 .inner{
-  /* white-space: nowrap; */
-  /* transform: transform 0.3s; */
+  white-space: nowrap;
+  transform: transform 0.3s;
   display: contents;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); 
 }
