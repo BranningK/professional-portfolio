@@ -54,7 +54,7 @@ export const NavBar = () => {
               <a href='https://twitter.com/BranningK'><img src={ twitterBlue } alt="Twitter logo that links to Branning Knight's Twitter page"></img></a>
             </div>
             <div className='state-selectors'>
-              <a>en</a>/<a>fr</a>&nbsp;
+              &nbsp;&nbsp;&nbsp;<a>EN</a>/<a>FR</a>&nbsp;
               <a>Light</a>/<a>Dark</a>
             </div>
           </span>

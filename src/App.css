@@ -161,7 +161,7 @@ nav.navbar .navbar-toggler-icon:before{
   width: 96%;
 }
 .banner img{
-  animation: updown 3s linear infinite;
+  animation: updown 4s linear infinite;
 }
 @keyframes updown {
   0%{
@@ -174,14 +174,36 @@ nav.navbar .navbar-toggler-icon:before{
     transform: translateY(-20px);
   }
 }
+@-webkit-keyframes borderBlink {    
+  from, to {    
+      border-color: transparent    
+  }    
+  50% {    
+      border-color: black    
+  }    
+}  
+@keyframes borderBlink {    
+  from, to {    
+      border-color: transparent    
+  }    
+  50% {    
+      border-color: #7e7e7e   
+  }    
+}
+.borderBlink{    
+  border-right:0.06em solid#7e7e7e;
+  -webkit-animation: borderBlink 2s step-end infinite;    
+  animation: borderBlink 2s step-end infinite; 
+  border-color: transparent;
+}
 .wrap {
-  border-right: 0.06em solid #7e7e7e;
   color: #5d2689;
   opacity: 70%;
 }
 .pic{
   max-height: 400px;
 }
+
 
 /* Projects */
 .project{

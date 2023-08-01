@@ -5,7 +5,9 @@ import { Banner } from './components/Banner';
 // import { Projects } from './components/Projects';
 // import { Footer } from './components/Footer';
 import Carousel from 'react-elastic-carousel';
-import Item from './components/Item'
+import Item from './components/Item';
+import Example from './components/Example';
+import darkSignature from './assets/darkSignature.png'
 
 const breakpoints = [
   { width : 1, itemsToShow: 1 },
@@ -19,12 +21,15 @@ function App() {
     <div className="App">
       <NavBar />
       <Banner />
-      <Carousel breakPoints={breakpoints}>
-        <Item>item 1</Item>
+      {/* <Carousel breakPoints={breakpoints}>
+        <Item><img src={darkSignature}/></Item>
         <Item></Item>
         <Item></Item>
         <Item></Item>
-      </Carousel>
+        <Item></Item>
+        <Item></Item>
+      </Carousel> */}
+      <Example />
       {/* <Projects /> */}
       {/* <Footer /> */}
     </div>
