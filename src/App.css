@@ -338,16 +338,14 @@ nav.navbar .navbar-toggler-icon:before{
 
 .carouselProject{
   border: 1px solid transparent;
-  border-radius: 15px;
-}
-.carouselProject:hover{
-  background-color: #7e7e7e;
-  opacity: 80%;
 }
 .carouselImage{
   max-height: 240px;
 }
-
+.carouselImage:hover{
+  background-color: #8b8b8b;
+  opacity: 80%;
+}
 
 
 .App {
