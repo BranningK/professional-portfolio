@@ -8,7 +8,7 @@ const breakpoints = [
   { width: 550, itemsToShow: 2 },
   { width: 768, itemsToShow: 3 }, 
   { width: 1200, itemsToShow: 4 },
-]
+];
 
 export default class App extends Component {
   state ={
@@ -28,7 +28,7 @@ export default class App extends Component {
       <Carousel breakPoints={breakpoints}>
         {items.map(item => <div className="carouselProject"><img className="carouselImage" key={item.id} src={item.img} alt={item.alt}/><p className="carouselText">{item.title}</p></div>)}
       </Carousel>
-    )
-  }
+    );
+  };
 
-}
+};
