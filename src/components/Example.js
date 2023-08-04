@@ -1,7 +1,12 @@
 import { Component } from "react";
 import Carousel from 'react-elastic-carousel';
-import githubDark from '../assets/logos/github/githubDark.png';
 import weatherApp from '../assets/weatherPostSearch.png';
+import workplaceManager from '../assets/workplaceManager.png';
+import READMEgen from '../assets/READMEgenIMG.png';
+import passwordGen from '../assets/passwordGenIMG.png';
+import teamGen from '../assets/teamGenAfter.png';
+import musiQuest from '../assets/musiQuest.png';
+
 
 const breakpoints = [
   { width : 1, itemsToShow: 1 },
@@ -13,12 +18,12 @@ const breakpoints = [
 export default class App extends Component {
   state ={
     items: [
-      { id: 1, img: githubDark, alt: "Image of the project running in the terminal" , title: `README Generator` },
-      { id: 2, img: weatherApp, alt: "Blah" , title: `Weather Forecast` },
-      { id: 3, img: githubDark, alt: "Blah" , title: `Random Password Generator` },
-      { id: 4, img: githubDark, alt: "Blah" , title: `Team Profile Generator` },
-      { id: 5, img: githubDark, alt: "Blah" , title: `MusiQuest` },
-      { id: 6, img: githubDark, alt: "Blah" , title: `Workplace Tracker` },
+      { id: 1, img: READMEgen, alt: "Image of the README generator running in the CLI." , title: `README Generator`, link: 'https://github.com/BranningK/READMEgen/' },
+      { id: 2, img: weatherApp, alt: "Image of the current weather on the webpage." , title: `Weather Forecast`, link: 'https://branningk.github.io/weatherForecast/' },
+      { id: 3, img: passwordGen, alt: "Image of the password generator site in the browser" , title: `Random Password Generator`, link: 'https://branningk.github.io/randomPasswordGen/' },
+      { id: 4, img: teamGen, alt: "Image of the generated team profile in the browser." , title: `Team Profile Generator`, link: 'https://github.com/BranningK/teamProfileGen/' },
+      { id: 5, img: musiQuest, alt: "Image of the MusiQuest app running in the browser." , title: `MusiQuest`, link :'https://altavada.github.io/musiquest/' },
+      { id: 6, img: workplaceManager, alt: "Image of the workplace tracker running in the CLI." , title: `Workplace Manager`, link: 'https://github.com/BranningK/employeeTracker' },
     ]
   }
 
@@ -26,7 +31,7 @@ export default class App extends Component {
     const { items } = this.state;
     return (
       <Carousel breakPoints={breakpoints}>
-        {items.map(item => <div className="carouselProject"><img className="carouselImage" key={item.id} src={item.img} alt={item.alt}/><p className="carouselText">{item.title}</p></div>)}
+        {items.map(item => <div className="carouselProject"><img className="carouselImage" key={item.id} src={item.img} alt={item.alt}/><a className="carouselText" href={item.link} target="_blank">{item.title}</a></div>)}
       </Carousel>
     );
   };
