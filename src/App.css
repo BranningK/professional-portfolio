@@ -346,6 +346,20 @@ nav.navbar .navbar-toggler-icon:before{
   background-color: #8b8b8b;
   opacity: 80%;
 }
+/* Footer */
+.footer{
+  padding: 50px 0 50px 0;
+}
+.footerLogo{
+  max-width: 200px;
+  padding-top: 0px;
+  align-items:start;
+  justify-content: start;
+}
+.footer-social-icon{
+  align-items: center;
+}
+
 
 
 .App {

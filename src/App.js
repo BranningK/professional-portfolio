@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from './components/Navbar';
 import { Banner } from './components/Banner';
-// import { Footer } from './components/Footer';
+import { Footer } from './components/Footer';
 import Example from './components/Example';
 
 
@@ -12,7 +12,7 @@ function App() {
       <NavBar />
       <Banner />
       <Example />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
