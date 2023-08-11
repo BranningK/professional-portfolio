@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/professional-portfolio/static/css/main.45aa9222.css",
+    "main.js": "/professional-portfolio/static/js/main.bc7e7785.js",
+    "static/js/787.10c1ab8b.chunk.js": "/professional-portfolio/static/js/787.10c1ab8b.chunk.js",
+    "static/media/Subject.png": "/professional-portfolio/static/media/Subject.158dc210fdecbce1daf4.png",
+    "static/media/Inter-Bold.ttf": "/professional-portfolio/static/media/Inter-Bold.9aab1ebe6bd16660e37e.ttf",
+    "static/media/Inter-Medium.ttf": "/professional-portfolio/static/media/Inter-Medium.9d1fd4235eeb376c5f96.ttf",
+    "static/media/Inter-Regular.ttf": "/professional-portfolio/static/media/Inter-Regular.b559a93b35af397f4b6f.ttf",
+    "static/media/weatherPostSearch.png": "/professional-portfolio/static/media/weatherPostSearch.713f8f57a7d4ab628f3e.png",
+    "static/media/teamGenAfter.png": "/professional-portfolio/static/media/teamGenAfter.45aa55be7914c27dfe76.png",
+    "static/media/workplaceManager.png": "/professional-portfolio/static/media/workplaceManager.6ad4df60aad30dce321c.png",
+    "static/media/darkSignature.png": "/professional-portfolio/static/media/darkSignature.fabf8ab2c4776af25c94.png",
+    "static/media/musiQuest.png": "/professional-portfolio/static/media/musiQuest.508fbfbd17197f5f4761.png",
+    "static/media/passwordGenIMG.png": "/professional-portfolio/static/media/passwordGenIMG.705af6c36fc1a10edf4e.png",
+    "static/media/READMEgenIMG.png": "/professional-portfolio/static/media/READMEgenIMG.b3becbc3d0d587eabf72.png",
+    "static/media/twitterBlue.png": "/professional-portfolio/static/media/twitterBlue.f963dcac51d5020e10f3.png",
+    "index.html": "/professional-portfolio/index.html",
+    "main.45aa9222.css.map": "/professional-portfolio/static/css/main.45aa9222.css.map",
+    "main.bc7e7785.js.map": "/professional-portfolio/static/js/main.bc7e7785.js.map",
+    "787.10c1ab8b.chunk.js.map": "/professional-portfolio/static/js/787.10c1ab8b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45aa9222.css",
+    "static/js/main.bc7e7785.js"
+  ]
+}
