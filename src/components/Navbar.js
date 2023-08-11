@@ -34,18 +34,26 @@ export const NavBar = () => {
   const onUpdateActiveState = (value) => {
     setActiveState(value);
   }
+  const scrollToTop = () => {
+    window.scrollBy(0,-10000);
+    return;
+  };
+  const clickHome = () => {
+    onUpdateActiveLink('home');
+    scrollToTop();
+  }
 
   return (
-    <Navbar expand="lg" className={ scrolled ? "scrolled": ""  }>
+    <Navbar expand="lg" id='home' className={ scrolled ? "scrolled": ""  }>
       <Container>
-        <Navbar.Brand href="#home"><img className='sig' src={darkSignature} alt='Signature reading Branning Knight'></img></Navbar.Brand>
+        <Navbar.Brand href="#home"><img className='sig' onClick={() => clickHome()} src={darkSignature} alt='Signature reading Branning Knight'></img></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" className={ activeLink === 'home' ? 'active navbar-link': 'navbar-link' } onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-            <Nav.Link href="#skills" className={ activeLink === 'skills' ? 'active navbar-link': 'navbar-link' } onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+            <Nav.Link href="#home" className={ activeLink === 'home' ? 'active navbar-link': 'navbar-link' } onClick={() => clickHome()}>Home</Nav.Link>
+            {/* <Nav.Link href="#skills" className={ activeLink === 'skills' ? 'active navbar-link': 'navbar-link' } onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link> */}
             <Nav.Link href="#projects" className={ activeLink === 'projects' ? 'active navbar-link': 'navbar-link' } onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-            <Nav.Link href="#resume" className={ activeLink === 'resume' ? 'active navbar-link': 'navbar-link' } onClick={() => onUpdateActiveLink('resume')}>Resume</Nav.Link>
+            <Nav.Link href="https://docs.google.com/document/d/1ZXT7GlNhuRiznN7DOZun6CxKQhuDJyQ3sXDIUi_6nmM/edit?usp=sharing" target='_blank' className={ activeLink === 'resume' ? 'active navbar-link': 'navbar-link' } onClick={() => onUpdateActiveLink('resume')}>Resume</Nav.Link>
           </Nav>
           <span className='navbar-text'>
             <div className='social-icons'>
@@ -54,8 +62,8 @@ export const NavBar = () => {
               <a href='https://twitter.com/BranningK'><img src={ twitterBlue } alt="Twitter logo that links to Branning Knight's Twitter page"></img></a>
             </div>
             <div className='state-selectors'>
-              &nbsp;&nbsp;&nbsp;<a>EN</a>/<a>FR</a>&nbsp;
-              <a>Light</a>/<a>Dark</a>
+              {/* &nbsp;&nbsp;&nbsp;<a>EN</a>/<a>FR</a>&nbsp;
+              <a>Light</a>/<a>Dark</a> */}
             </div>
           </span>
         </Navbar.Collapse>

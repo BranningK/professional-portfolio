@@ -67,10 +67,13 @@ span.navbar-text{
   display:flex;
   align-items: center;
 }
+#basic-navbar-nav{
+  margin-left: 70px;
+}
 .sig{
   scale: 6;
   margin-left: 20px;
-  margin-right: 70px;
+  margin-right: 0px;
 }
 .social-icons{
   display: inline-block;

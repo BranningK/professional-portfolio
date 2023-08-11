@@ -40,12 +40,12 @@ export const Banner = () => {
   }
 
   return (
-    <section className="banner" id="home">
+    <section className="banner">
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Nice to meet you, welcome to my portfolio.</span>
-            <h1>{`Hi I'm Branning, I'm a `}<span className="text-rotate wrap borderBlink">{text}</span></h1>
+            <span className="tagline" id="home">Nice to meet you, welcome to my portfolio.</span>
+            <h1 id="home">{`Hi I'm Branning, I'm a `}<span className="text-rotate wrap borderBlink">{text}</span></h1>
             <p>I'm a Full-Stack Developer from North Carolina with a passion for creating applications to simplify and connect our lives. I plan to achive this through my knowledge of the MERN stack and other technologies that becomes useful in pursuing that goal.</p>
           </Col>
           <Col xs={12} md={6} xl={5}>
