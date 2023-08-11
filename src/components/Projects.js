@@ -31,7 +31,7 @@ export default class App extends Component {
     const { items } = this.state;
     return (
       <Carousel breakPoints={breakpoints}>
-        {items.map(item => <div className="carouselProject"><img className="carouselImage" key={item.id} src={item.img} alt={item.alt}/><a className="carouselText" href={item.link} target="_blank">{item.title}</a></div>)}
+        {items.map(item => <div id='projects' className="carouselProject"><img className="carouselImage" key={item.id} src={item.img} alt={item.alt}/><a className="carouselText" href={item.link} target="_blank">{item.title}</a></div>)}
       </Carousel>
     );
   };
